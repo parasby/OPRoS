@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component_profile>
+<name>RobotController</name>
+<description>Controller Sample Component</description>
+<execution_environment> 
+	<os name="WindowsXP" version="sp3"></os>
+	<cpu>x86</cpu>
+	<library_type>dll</library_type>
+	<library_name>RobotController.dll</library_name>
+	<impl_language>c++</impl_language>
+	<compiler>MINGW</compiler>
+</execution_environment>
+<execution_semantics>
+	<type>periodic</type>
+	<period>30</period>
+	<priority>1</priority>
+	<creation_type>singleton</creation_type> 
+	<lifecycle_type>start</lifecycle_type> 
+</execution_semantics>
+<exports>
+	<var name="status" type="std::string"/>
+	<var name="statusInt" type="int"/>
+	<var name="statusFloat" type="float"/>
+</exports>
+<ports>
+	<service_port>
+		<name>RobotControl</name>
+		<type>RobotControl</type>
+		<usage>provided</usage>
+		<reference>RobotControl.xml</reference>
+	</service_port>
+</ports>
+</component_profile>

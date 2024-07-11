@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component_profile>
+<name>GPS</name>
+<description>GPS Component</description>
+<execution_environment> 
+	<os name="WindowsXP" version="sp3"></os>
+	<cpu>x86</cpu>
+	<library_type>dll</library_type>
+	<library_name>GPS</library_name>
+	<impl_language>c++</impl_language>
+	<compiler>MINGW</compiler>
+</execution_environment>
+<execution_semantics>
+	<type>periodic</type>
+	<period>100</period>
+	<priority>10</priority>
+	<instance_creation>singleton</instance_creation> 
+	<lifecycle_type>start</lifecycle_type> 
+</execution_semantics>
+
+<properties>
+</properties>
+	
+<ports>
+</ports>
+</component_profile>
